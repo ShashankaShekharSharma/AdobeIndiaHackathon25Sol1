@@ -43,7 +43,7 @@ AdobeIndiaHackathon25Sol1/
 
 1. **Install dependencies:**
    ```bash
-   pip install pymupdf
+   !pip install PyMuPDF
    ```
 
 2. **Modify input/output paths in the script and run:**
