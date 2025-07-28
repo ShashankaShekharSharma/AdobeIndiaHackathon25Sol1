@@ -241,6 +241,9 @@ print(f"Headers found: {len(result['outline'])}")
 
 - Python 3.9+
 - PyMuPDF (fitz) library
+```bash
+pip install PyMuPDF
+```
 - Docker (optional, for containerized deployment)
 
 ## Challenge Alignment
