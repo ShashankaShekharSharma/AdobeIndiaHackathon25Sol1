@@ -51,13 +51,6 @@ AdobeIndiaHackathon25Sol1/
    python pdf_parser.py
    ```
 
-## � Docker Instructions for Challenge 1a and 1b
-
-This document explains how to build and run Docker containers for two projects:
-
-- `pdf_parser.py` (Challenge 1a)
-- `pdf_analyzer.py` (Challenge 1b)
-
 ---
 
 ### PROJECT 1: `pdf_parser.py` (Challenge 1a)
@@ -246,7 +239,7 @@ print(f"Headers found: {len(result['outline'])}")
 
 ##  Requirements
 
-- Python 3.7+
+- Python 3.9+
 - PyMuPDF (fitz) library
 - Docker (optional, for containerized deployment)
 
