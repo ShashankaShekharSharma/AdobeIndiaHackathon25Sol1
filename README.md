@@ -67,13 +67,13 @@ This document explains how to build and run Docker containers for two projects:
 - Mount `sample_dataset/outputs` → `/app/output` (writable)
 - Output: JSON files in `/sample_dataset/outputs`
 
-#### 🔧 1. Build Image (Same on all platforms)
+#### 1. Build Image (Same on all platforms)
 
 ```bash
 docker build --platform linux/amd64 -t pdf-processor .
 ```
 
-#### ▶️ 2. Run Container
+#### 2. Run Container
 
 | Environment         | Run Command                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ The parser generates JSON files with the following structure:
 }
 ```
 
-## 🎯 Algorithm Details
+## Algorithm Details
 
 ### Title Detection Process
 1. Filter out headers, footers, and noise elements
