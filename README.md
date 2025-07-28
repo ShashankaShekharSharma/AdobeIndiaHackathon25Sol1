@@ -244,7 +244,7 @@ print(f"Headers found: {len(result['outline'])}")
 - Verify `paragraph_font_size` detection
 - Review filtered elements in `table_elements` set
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.7+
 - PyMuPDF (fitz) library
