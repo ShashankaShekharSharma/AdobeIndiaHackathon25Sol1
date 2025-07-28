@@ -77,41 +77,6 @@ docker build --platform linux/amd64 -t pdf-processor .
 
 ---
 
-### PROJECT 2: `pdf_analyzer.py` (Challenge 1b)
-
-#### Dockerfile Summary:
-- Mount entire project directory to `/app`
-- Expects:
-  - `Collection 1`, `Collection 2`, `Collection 3`
-  - Each with `challenge1b_input.json` and `PDFs/`
-- Output: `challenge1b_output.json` inside each collection
-
-#### 1. Build Image (Same on all platforms)
-
-```bash
-docker build -t pdf-analyzer .
-```
-
-#### 2. Run Container (All Collections)
-
-| Environment         | Run Command                                                   |
-|---------------------|---------------------------------------------------------------|
-| **Windows CMD**      | `docker run --rm -v "%cd%:/app" pdf-analyzer`                 |
-| **Windows PowerShell** | `docker run --rm -v "${PWD}:/app" pdf-analyzer`                |
-| **macOS / Linux**     | `docker run --rm -v "$(pwd):/app" pdf-analyzer`              |
-| **WSL (Ubuntu)**      | Same as macOS/Linux                                          |
-
-#### 3. Run Container (Specific Collections)
-
-| Shell             | Example Command                                                                 |
-|------------------|----------------------------------------------------------------------------------|
-| **CMD**           | `docker run --rm -v "%cd%:/app" pdf-analyzer --collections "Collection 1"`       |
-| **PowerShell**    | `docker run --rm -v "${PWD}:/app" pdf-analyzer --collections "Collection 1"`     |
-| **macOS/Linux**   | `docker run --rm -v "$(pwd):/app" pdf-analyzer --collections "Collection 1"`     |
-| **WSL**           | Same as macOS/Linux                                                              |
-
----
-
 ## How It Works
 
 ### Core Components
